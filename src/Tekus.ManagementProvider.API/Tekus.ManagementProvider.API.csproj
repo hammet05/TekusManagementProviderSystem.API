@@ -6,4 +6,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tekus.ManagementProvider.Application\Tekus.ManagementProvider.Application.csproj" />
+    <ProjectReference Include="..\Tekus.ManagementProvider.Infrastructure\Tekus.ManagementProvider.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
