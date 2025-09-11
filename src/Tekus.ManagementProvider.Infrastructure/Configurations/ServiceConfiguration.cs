@@ -20,9 +20,6 @@ namespace Tekus.ManagementProvider.Infrastructure.Configurations
 
             builder.Property(x => x.HourlyRateUsd).HasColumnType("decimal(18,2)");
 
-            //builder.HasMany(x => x.Countries)
-            //       .WithOne(x => x.Service)
-            //       .HasForeignKey(x => x.ServiceId);
         }
     }
 }

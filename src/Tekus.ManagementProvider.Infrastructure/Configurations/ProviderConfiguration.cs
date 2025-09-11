@@ -14,22 +14,22 @@ namespace Tekus.ManagementProvider.Infrastructure.Configurations
 
             builder.Property(p => p.Nit).IsRequired().HasMaxLength(12)
                                         .HasConversion(
-                                                nit => nit!.value,
+                                                nit => nit!.Value,
                                                 value => new Nit(value)
                                         );
 
 
             builder.Property(p => p.Name).IsRequired().HasMaxLength(50)
                                          .HasConversion(
-                                                name => name!.value,
-                                                value => new Name(value)
+                                               name => name!.Value,
+                                               value => new Name(value)
                                          );
 
             builder.Property(p => p.Email).IsRequired().HasMaxLength(30)
-                                          .HasConversion(
-                                                    email => email!.value,
-                                                    value => new Email(value)
-                                          );
+                                        .HasConversion(
+                                                  email => email!.Value,
+                                                  value => new Email(value)
+                                        );
 
 
             builder.HasMany(x => x.ProviderServices)

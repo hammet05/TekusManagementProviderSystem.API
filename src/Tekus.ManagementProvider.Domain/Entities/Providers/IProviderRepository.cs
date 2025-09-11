@@ -1,7 +1,10 @@
-﻿namespace Tekus.ManagementProvider.Domain.Entities.Providers
+﻿using Tekus.ManagementProvider.Domain.Abstractions;
+
+namespace Tekus.ManagementProvider.Domain.Entities.Providers
 {
-    public interface IProviderRepository
+    public interface IProviderRepository : IRepository<Provider>
     {
-        void Add(Provider provider);
+        Task<IEnumerable<Provider>> GetActiveProviders();
+
     }
 }

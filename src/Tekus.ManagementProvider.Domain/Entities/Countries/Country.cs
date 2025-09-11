@@ -11,6 +11,6 @@ namespace Tekus.ManagementProvider.Domain.Entities.Countries
 
 
         public CountryCode? CountryCode { get; private set; }
-        public bool IsActive { get; private set; }
+
     }
 }
